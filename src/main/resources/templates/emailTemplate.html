@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template</title>
+
+</head>
+<body>
+<div >
+    <h1 th:text="'Hello,'+ ${recepientName} + '!' " ></h1>
+    <p th:text="${body}"></p>
+
+    <p th:text = "' Send  from '+ ${senderName}"></p>
+
+</div>
+</body>
+</html>
+
+
